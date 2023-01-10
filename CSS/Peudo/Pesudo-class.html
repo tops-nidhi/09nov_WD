@@ -17,15 +17,17 @@
             background-color: lightgray;
             border: none;
             font-size: 16px;
-            border-radius: 10px;
-            margin-left: 500px;
-            transition: height 1s, width 2s, transform 3s;
+            /* margin-left: 500px; */
+            transition: height 1s, width 2s, transform 3s, border-radius 5s;
+            
         }
         .hover:hover{
+            margin: 10px;
             transform: rotate(360deg);
-            height: 70px;
+            height: 100px;
+            border-radius: 100%;
             
-            width: 150px;
+            width: 130px;
             background-color: orange;
             border: 3px solid navy;
         }
@@ -59,6 +61,9 @@
         }
         h1{
             color: darkgreen;
+        }
+        h1:first-child{
+            color: darkred;
         }
         h1:nth-child(2n){
             color: gray;

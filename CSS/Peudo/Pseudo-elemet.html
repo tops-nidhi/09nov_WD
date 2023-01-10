@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: lightblue;
+            color: darkblue;
+            border: 1px solid black;
+        }
+        .line::first-line
+        {
+            background: transparent;
+            color: red;
+        }
+        .letter::first-letter{
+            font-size: 36px;
+        }
+        ::selection{
+            color: rebeccapurple;
+            background: lightcoral;
+        }
+        .line::selection{
+            background: yellow;
+            color: navy;
+        }
+        ul{
+            list-style: circle;
+        }
+        ::marker{
+            color: brown;
+        }
+        p::after{
+            content: 'HEllo';
+        }
+        .line::before{
+            content: 'Hello';
+        }
+    </style>
+</head>
+<body>
+    <p class="letter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, facilis? Illum eaque veritatis voluptatum recusandae ullam facilis nostrum accusamus impedit laborum aspernatur ab necessitatibus labore eos, sequi et cum consectetur non tempore blanditiis nulla modi? Quas cupiditate minus ea consequuntur officia amet&#128512;</p>
+    <p class="line">sed dolore atque nihil, accusamus beatae optio sit architecto sapiente vitae excepturi illo dolorum delectus voluptates eum dicta blanditiis ipsa laboriosam? Sequi nemo fugiat iusto itaque. Doloremque modi autem nesciunt adipisci iure perferendis vero, amet, dolor cumque itaque voluptatibus repellendus est temporibus consequatur commodi velit suscipit consequuntur? Asperiores nulla quo fugit assumenda itaque harum ea officiis porro reiciendis.&#128512; &#128516; &#128525; &#128151;</p>
+    <ul>
+        <li>WD</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+</html>
