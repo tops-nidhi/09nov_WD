@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <style>
+        body{
+            font-size: 32px;
+            font-family: cursive;
+        }
+        .left-aside, .content, .right-aside{
+            height: 300px;
+            margin-right: 10px;
+        }
+        
+        .left-aside{
+            float: left;
+            width: 10%;
+            background: #0222a2;
+        }
+        .content{
+            /* float: left; */
+            width: 69.5%;
+            background: lightblue;
+            /* clear: left; */
+            /* clear: both; */
+        }
+        .right-aside{
+            width: 20%;
+            background: royalblue;
+            float: right;
+        }
+        div{
+            width: 75%;
+            height: 300px;
+            background: lightcoral;
+            clear: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="left-aside">Left-aside</div>
+    <div class="content">Content</div>
+    <div class="right-aside">Right-aside</div>
+    <div>Hello</div>
+</body>
+</html>

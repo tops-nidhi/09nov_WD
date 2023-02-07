@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12Position</title>
+    <style>
+        .perent{
+            height: 3000px;
+            width: auto;
+            background: lightblue;
+            font-size: 25px;
+            color: #ff003f;
+            top: 250px;
+        }
+        .div1, .div2, .div3, .div4{
+            height: 50px;
+        }
+        .div1{
+            position: relative;
+            width: 50%;
+            background: green;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .div2{
+            background: lightgreen;
+            position: sticky;
+            top: 0;
+        }
+        .div3
+        {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background: lightseagreen;
+        }
+        .div4{
+            background: lightskyblue;
+        }
+        .banner
+        {
+            height: 300px;
+            width: auto;
+            position: relative;
+            /* text-align: center; */
+        }
+        .banner img, h1{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="perent">
+        Perent
+        <div class="div1">Item1</div>
+        <div class="div2">Item2</div>
+        <div class="div3">Item3</div>
+        <div class="div4">Item4</div>
+    </div>
+    <div class="banner">
+        <div class="img">
+            <img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner2.jpg" alt="" height="300px" width="500px">
+        </div>
+        <div class="text">
+            <h1>The giant pizza slices</h1>
+        </div>
+    </div>
+</body>
+</html>
