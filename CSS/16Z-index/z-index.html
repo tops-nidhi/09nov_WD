@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .main{
+            background: gray;
+            height: 700px;
+            position: relative;
+        }
+        .main .item{
+            position: absolute;
+        }
+        .main .item-1{
+            height: 200px;
+            width: 200px;
+            background: coral;
+            border: 1px solid orangered;
+            z-index: 4;
+
+        }
+        .main .item-2{
+            height: 300px;
+            width: 300px;
+            background: lightblue;
+            border: 1px solid navy;
+            z-index: 2;
+            top: 5%;
+        }
+        .main .item-3{
+            height: 400px;
+            width: 400px;
+            background: lightgreen;
+            border: 1px solid darkgreen;
+            top: 10%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+    </div>
+</body>
+</html>
