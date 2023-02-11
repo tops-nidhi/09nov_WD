@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 150px;
+            width: 300px;
+            position: relative;
+            /* background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg); */
+            background-size: 100% 100%;
+            margin: 100px auto;
+            overflow: hidden;
+            border: 10px solid rgba(255, 255, 255, 0.2);
+            background-origin: border-box;
+        }
+        .item{
+            transition: 1s;
+            height: 20px;
+            width: 20px;
+            /* margin-top: 20px;   */
+            position: absolute;  
+        }
+        .item{
+            background: rgba(0, 0, 0, 0.1);
+            height: 150px;
+            width: 300px;
+            /* display: block; */
+            /* margin: 120px; */
+            /* padding: 20px; */
+            position: absolute;
+        }
+        .item-2{
+            top: 100%;
+            right: 100%;
+        }
+        .item-1{
+            bottom: 100%;
+            left: 100%;
+        }
+        img{
+            left: -25px;
+            transition: 0.5s;
+            position: absolute;
+        }
+        .container:hover{
+            cursor: pointer;
+        }
+        .container:hover img{
+            left: 0;
+            cursor: wait;
+        }
+        .container:hover .item-1{
+            bottom: 0;
+            left: 0;
+        }
+        .container:hover .item-2{
+            top: 0;
+            right: 0;
+        }
+        .border{
+            height: 100px;
+            width: 200px;
+            border: 2px solid #fff;
+            position: absolute;
+            top: 15px;
+            left: 40px;
+            display: none;
+            color: #fff;
+            text-align: ;
+        }
+        .container:hover .border{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg" alt="" height="150px" width="330px">
+        <!-- <div class="item item-1">Block level element</div> -->
+        <!-- <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="border">New Arivals</div> -->
+        <!-- <div class="item item-2">Block level element</div> -->
+    </div>
+
+</body>
+</html>
