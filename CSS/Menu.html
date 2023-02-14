@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            font-size: 20px;
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            color: darkgreen;
+            background: lightgreen;
+        }
+        ul li{
+            display: inline;
+            margin: 5px;
+            padding: 50px;
+        }
+        .inner-list{
+            display: none;
+        }
+        .inner-list li{
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        .con:hover  .inner-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="outer-list">
+            <li>Home</li>
+            <li>About-us</li>
+            <li class="con">Contact-us
+                <ul class="inner-list">
+                    <li>e-mail</li>
+                    <li>contact-no</li>
+                    <li>review</li>
+                </ul>
+            </li>
+            <li>feedback</li>
+        </ul>
+    </header>
+</body>
+</html>

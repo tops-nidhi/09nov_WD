@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>None</title>
+    <style>
+        *{
+            font-size: 30px;
+        }
+        .item{
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            padding: 1em;
+            background: lightgreen;
+            border: 2px solid darkgreen;
+        }
+        .item-2{
+        }
+        .item-3{
+            display: none;
+        }
+        .item-2:hover + .item-3{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+
+</body>
+</html>
