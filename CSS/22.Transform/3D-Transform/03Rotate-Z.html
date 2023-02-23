@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate-Y</title>
+    <style>
+        div{
+            height: 200px;
+            width: 250px;
+            background: maroon;
+            border: 1px solid black;
+            margin: 10px auto;
+            font-size: 20px;
+            color: #fff;
+            backface-visibility: hidden;
+            transition: 1s;
+        }
+        .main{
+            background: none;
+            border: none;
+            position: relative;
+        }
+        .original{
+            position: absolute;
+            transform: rotateZ(180deg);
+            background: lightcoral;
+        }
+        .ry{
+            position: absolute;
+            transform: rotateZ(0deg);
+            background: maroon;
+
+        }
+        .main:hover .ry{
+            transform: rotateZ(180deg);
+        }
+        .main:hover .original{
+            transform: rotateZ(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="original">Original</div>
+        <div class="ry">Rotate</div>
+
+    </div>
+</body>
+</html>

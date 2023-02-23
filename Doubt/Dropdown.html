@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down</title>
+    <style>
+        *{
+            font-size: 32px;
+            box-sizing: border-box;
+        }
+        ul{
+            height: 50px;
+            background: darkgreen;
+            color: #fff;    
+            line-height: 50px;
+        }
+        li{
+            display: inline;
+            padding: 0px 70px;
+            /* border   : 1px solid black; */
+        }
+        li::after{
+            content: '';
+            border: 2px solid #fff;
+            margin-left: 20px;
+        }
+        .parent{
+            position: relative;
+        }
+        .child {
+            display: none;
+            height: auto;
+            position: absolute;
+            /* top: -5px; */
+            left: -2px;
+            text-align: center;
+        }
+        .child li{
+            display: block;
+            padding: 0px;
+            margin: 10px;
+            width: 200px;
+            border: none;
+        }
+        .parent:hover .child{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li class="parent">About
+            <ul class="child">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+            </ul>
+        </li>
+        <li>Services</li>
+        <li>Contact-Us</li>
+        <li>Login</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 300px;
+            width: 500px;
+            background: transparent;
+            margin: 100px;
+            position: absolute;
+            animation-name: animate;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: normal; */
+            /* animation-timing-function: ease-in-out; */
+
+        }
+        @keyframes animate {
+            from{background: yellow;top: 0; left: 0; border-radius: 10%;}
+            to{background: green; top: 20%; left: 20%; border-radius: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
