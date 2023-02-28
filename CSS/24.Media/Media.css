@@ -1,0 +1,39 @@
+@media (min-width: 500px)
+{
+    header ul{
+        background: lightcoral;
+    }
+    ul .fa-bars{
+        line-height: 50px;
+        display: block;
+    }
+    header ul li{
+        display: none;
+    }
+}
+@media (min-width: 700px)
+{
+    header ul{
+        background: lightblue;
+    }
+    ul .fa-bars{
+        line-height: 50px;
+        display: none;
+    }
+    header ul li{
+        display: inline;
+    }
+}
+@media (min-width: 900px)
+{
+    header ul{
+        background: cornsilk;
+    }
+    ul .fa-bars{
+        line-height: 50px;
+        display: none;
+    }
+    header ul li{
+        display: inline;
+    }
+}
