@@ -1,0 +1,30 @@
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+header{
+    height: 50px;
+    width: auto;
+    /* border: 1px solid black; */
+}
+header span{
+    padding: 0px 50px;
+}
+ul .fa-bars{
+    display: none;
+}
+header ul{
+    height: 50px;
+    background: cornsilk;
+    color: #000;
+    line-height: 50px;
+}
+header ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 50px;
+    padding: 0 50px;
+}
