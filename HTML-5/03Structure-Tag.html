@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height: 70px;
+            background: lightblue;
+            display: flex;
+        }
+        header{
+            height: 70px;
+            background: lightcoral;
+            display: flex;
+        }
+        .logo{
+            width: 30%;
+        }
+        .menu {
+            width: 70%;
+            text-align: right;
+            background: lightgreen;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            margin: 0px 50px;
+        }
+        @media (min-width: 1500px)
+        {
+            .logo{
+                background: limegreen;
+            }
+            .logo{
+                width: 30%;
+            }
+            .menu{
+                width: 70%;
+            }
+        }
+        @media (min-width: 900px) and (max-width: 1100px)
+        {
+            .logo{
+                width: 40%;
+            }
+            .menu{
+                width: 60%;
+            }
+            ul li
+            {
+                margin: 0 30px;
+            }
+        }
+        @media (min-width: 500px) and (max-width: 900px)
+        {
+            .header{
+                display: block;
+            }
+            .logo{
+                width: 100%;
+            }
+            .menu{
+                width: 100%;
+            } 
+            ul li
+            {
+                margin: 0 10px;
+            }
+        }
+        @media (max-width: 500px)
+        {
+            .header{
+                display: block;
+            }
+            .logo{
+                width: 100%;
+            }
+            .menu{
+                width: 100%;
+                background-color: lightgray;
+            } 
+            ul{
+                height: 35px;
+            }
+            ul li
+            {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact-Us</li>
+                <li>Feedback</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <header>
+        <section class="logo">Logo</section>
+        <section class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact-us</li>
+                <li>Feedback</li>
+                <li>Logout</li>
+            </ul>
+        </section>
+    </header>
+</body>
+</html>
