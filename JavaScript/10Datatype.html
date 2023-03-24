@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-of</title>
+</head>
+<body>
+    <p id="datatype"></p>
+    <script>
+        var x = document.getElementById("datatype");
+        
+        var object = { fnm: "heli", lnm:"patel", age:45};
+        var array = [1, 2, 3];
+
+        x.innerHTML = typeof "Nidhi" + "<br>" + typeof 3.14 +"<br>" + typeof 14 +"<br>" + typeof true + "<br>" + typeof false + "<br>" + typeof function func(){} + "<br>" + typeof object + "<br>" + typeof array;
+    </script>
+</body>
+</html>
