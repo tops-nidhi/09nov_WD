@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="val1" id="val_1" placeholder="Enter the 1st value">
+        <input type="text" name="val2" id="val_2" placeholder="Enter the 2nd value" value="">
+        <br>Answer<input type="text" id="ans">
+        <br><input type="reset" value="Reset">
+    </form>
+    <script>
+        let v1 = parseInt(document.getElementById('val_1').value);
+        let v2 = parseInt(document.getElementById('val_2').value);
+    
+
+        console.log(v1);
+        console.log(v2);
+
+        let max = (v1 > v2) ? true : false ; 
+        document.getElementById('ans').value = max;
+        console.log(max);
+
+    </script>
+</body>
+</html>
