@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested-Switch</title>
+</head>
+<body>
+    <ol>
+        <li>Hot-drinks<ol>
+            <li>hot-coco</li>
+            <li>Choco-milk</li>
+        </ol></li>
+        <li>Cold-Drinks
+            <ol>
+                <li>cold-coffee</li>
+                <li>cold-coco</li>
+            </ol>
+        </li>
+    </ol>
+    <button onclick="ch()">Enter your choice..</button>
+    <p id="p"></p>
+    <script>
+        let choice;
+        let key;
+        var p1 = document.getElementById('p');
+        function ch()
+        {
+            choice = prompt('Enter your choice <br> press 1 for hot-drinks <br> press 2 for cold-drinks', '');
+            choice = parseInt(choice);
+
+            switch (choice) {
+                case 1:
+                key = prompt('Enter your choice <br> press 1 for hot-coco <br> press 2 for choco-milk', '');
+                key = parseInt(key)
+                    switch (key) {
+                        case 1:
+                            p1.innerHTML = 'Your choice is hot-coco';
+                            break;
+                        case 2:
+                            p1.innerHTML = 'Your choice is Choco-milk';
+                            break;
+                        default:
+                            p1.innerHTML = 'Enter valid choice.......';
+                            break;
+                    }
+                    break;
+                    case 2:
+                key = prompt('Enter your choice <br> press 1 for cold-coffee <br> press 2 for cold-coco', '');
+                key = parseInt(key)
+                    switch (key) {
+                        case 1:
+                            p1.innerHTML = 'Your choice is cold-coffee';
+                            break;
+                        case 2:
+                            p1.innerHTML = 'Your choice is cold-coco';
+                            break;
+                        default:
+                            p1.innerHTML = 'Enter valid choice.......';
+                            break;
+                    }
+                    break;
+            
+                default:
+                    p1.innerHTML = 'Enter valid choice.......';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
