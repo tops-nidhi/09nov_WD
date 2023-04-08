@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <style>
+        #slider img{
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            // $('#slider').cycle('fade');
+            // $('#slider').cycle('zoom');
+            // $('#slider').cycle('scrollRight');
+            // $('#slider').cycle('scrollLeft');
+            // $('#slider').cycle('shuffle');
+            $('#slider').cycle('shuffle, zoom, scrollLeft, scrollRight');
+
+        })
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <img src="../Image/slider1.jpg" alt="">
+        <img src="../Image/slider2.jpg" alt="">
+        <img src="../Image/slider3.jpg" alt="">
+        <img src="../Image/slider4.jpg" alt="">
+        <img src="../Image/slider5.jpg" alt="">
+        <img src="../Image/slider6.jpg" alt="">
+    </div>
+</body>
+</html>
