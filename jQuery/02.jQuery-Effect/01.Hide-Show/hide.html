@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                // $('.par').hide();
+                // $('.par').hide('fast');
+                // $('.par').hide('slow');
+                $('.par').hide(1000);
+            });
+            $('p').click(function(){
+                $(this).hide(1000);
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quo.</p>
+</body>
+</html>

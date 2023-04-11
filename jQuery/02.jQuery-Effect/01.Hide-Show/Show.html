@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        div{
+            height: 250px;
+            width: 250px;
+            background: red;
+            margin: 200px;
+            /* display: none; */
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.show').click(function(){
+                $('div').show();
+                // $('div').show('slow');
+                // $('div').show('fast');
+                // $('div').show(3000);
+            });
+        })
+    </script>
+</head>
+<body>
+    <button class="show">Show</button>
+    <div></div>
+</body>
+</html>
