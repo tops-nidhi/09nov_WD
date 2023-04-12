@@ -1,1 +1,21 @@
-<!-- $('div').fadeTo(1000,0.5); -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade-In</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.fade').click(function(){
+                $('div').fadeTo(1000,0.5);
+            })
+        });
+    </script>
+</head>
+<body>
+    <button class="fade">Fade-In</button>
+    <div style="height: 200px; width: 200px; margin: 100px; background: #000;"></div>
+</body>
+</html>
