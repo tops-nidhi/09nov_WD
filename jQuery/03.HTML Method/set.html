@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+    
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <button id="b1">Set Text</button>
+    <p id="par1" style="display: inline;"></p><br><br>
+    <button id="b2">Set html</button>
+    <p id="par2" style="display: inline;"></p><br><br>
+    <button id="b3">Set value</button>
+    <input type="text" name="" id="inp" value="" style="border: none;"><br><br>
+    <button id="b4">Set attribute</button>
+    <img src="" alt="" height="120px" width="120px">
+    <script>
+        $(document).ready(function(){
+            $('#b1').click(function(){
+                $('#par1').text('hello Nidhi');
+            });
+            $('#b2').click(function(){
+                $('#par2').html('hello <b>Nidhi</b>');
+                prompt($('#par2').html());
+            });
+            $('#b3').click(function(){
+                $('#inp').val('Nidhi Nadiyapara');
+            });
+            // $('#b4').click(function(){
+            //     $('img').attr('href'+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBCIzPegBfPv3E7tgAGjaCT_48vus6A44lA&usqp=CAU');
+            // });
+        });
+    </script>
+</body>
+</html>
