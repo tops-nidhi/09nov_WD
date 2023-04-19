@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HasClass</title>
+    <title>wrapAll</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <style>
-        .x{
-            height: 200px;
-            width: auto;
-            background: #000;
-            color: #fff;
+        div{
+            background: salmon;
         }
     </style>
     <script>
         $(document).ready(function(){
             $('button').click(function(){
-                alert($('div').hasClass('y'));
+                $('p').wrapAll('<div></div>');
             });
         });
     </script>
 </head>
 <body>
-    <div class="x"></div>
-    <button>Has Class</button>
+    <p>This is p tag.</p>
+    <p>This is paragraph tag</p>
+    <button>Click Me</button>
 </body>
 </html>
