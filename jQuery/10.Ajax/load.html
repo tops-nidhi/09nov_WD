@@ -9,13 +9,15 @@
     <script>
         $(document).ready(function(){
             $('button').click(function(){
-                $('#div_1').load('test.txt');
+                $('#div_1').load('test.html',function(){
+                    alert('File success loded');
+                });
             });
         });
     </script>
 </head>
 <body>
-    <div id="div_1">This is Ajax</div>
+    <div id="div_1"></div>
     <button>Click Me</button>
 </body>
 </html>
