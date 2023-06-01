@@ -22,7 +22,9 @@ $("#myform").validate({
         confirm_password: {
             required: true,
             minlength: 6,
-            maxlength: 16
+            maxlength: 16,
+            equalTo: "#password"
+
         }
     },
     messages:{
@@ -48,7 +50,9 @@ $("#myform").validate({
         confirm_password: {
             required: "Please enter your confirm password",
             minlength: "Your confirm password must consist of at least 6 characters",
-            maxlength: "Your confirm password only consist of 16 characters"
+            maxlength: "Your confirm password only consist of 16 characters",
+            equalTo: "Your confirm password must be the same as your password"
+
         }
     },
     submitHandler: function(form) {

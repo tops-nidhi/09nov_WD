@@ -8,16 +8,24 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("button").click(function(){
-        $.ajax({
-        url: 'test.html',
-        type: 'GET',
-        success: function(data) {
-        $("#para").html(data);
-        }
+            $("button").click(function(){
+                $.ajax({
+                    url: 'test.html',
+                    type: 'GET',
+                    success: function(data) {
+                        $("#para").html(data);
+                    }
+                });
+            });
         });
-        });
-        });
+        // ----------------------------------------
+        /*$(document).ready(function(){
+            $("button").click(function(){
+                $.ajax({url: "test.js", dataType: "script"});
+            });
+        });*/
+        // --------------------------
+        /**/
     </script>
         
 </head>
